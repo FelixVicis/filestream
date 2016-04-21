@@ -3,6 +3,8 @@
 
 This package provides functionality for asynchronous file writing.
 
+To install run `go get "github.com/FelixVicis/filestream"`
+
 This work is under Creative Commons Attribution 4.0 International (CC BY 4.0)
 Information about this license can be found [here](https://creativecommons.org/licenses/by/4.0/)
 
