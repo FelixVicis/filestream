@@ -1,15 +1,15 @@
+// Package filestream provides a simple to use asynchronous file writer.
+package filestream
+
 /*
 FileStream.go by Allen J. Mills
     4.21.16
 
-    An asycronous file writer.
+    An asynchronous file writer.
 
     This work is under Creative Commons Attribution 4.0 International (CC BY 4.0)
     Information about this license can be found here: https://creativecommons.org/licenses/by/4.0/
 */
-
-// Package filestream provides a simple to use asyncronous file writer.
-package filestream
 
 import (
 	"errors"
@@ -50,7 +50,7 @@ func NewFileStream() FileStream {
 // Once this happens, you may add information to FileStream.Write and this function
 // write the incoming string information to a file.
 //
-// Warning: This function will block execution if not placed inside a go routine.
+// Warning: This function will block execution if not placed inside a goroutine.
 func StartStream(filename string, fs *FileStream) {
 	f, fileErr := os.OpenFile(filename, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0666)
 	if fileErr != nil {
