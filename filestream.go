@@ -14,7 +14,6 @@ FileStream.go by Allen J. Mills
 import (
 	"errors"
 	"os"
-	"time"
 )
 
 var (
@@ -68,7 +67,7 @@ func StartStream(filename string, fs *FileStream) {
 			fs.OK <- ErrStreamClosed
 			return
 		default:
-			time.Sleep(1 * time.Second) // we'll wait.
+			continue // we'll wait.
 		}
 	}
 	return
