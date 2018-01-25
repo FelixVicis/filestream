@@ -1,5 +1,4 @@
-# filestream package
-[![Build Status](https://travis-ci.org/FelixVicis/filestream.svg)](https://travis-ci.org/FelixVicis/filestream)
+# filestream package [![Build Status](https://travis-ci.org/FelixVicis/filestream.svg)](https://travis-ci.org/FelixVicis/filestream) [![GoDoc](https://godoc.org/github.com/FelixVicis/filestream?status.svg)](https://godoc.org/github.com/FelixVicis/filestream)
 
 This package provides functionality for asynchronous file writing.
 
